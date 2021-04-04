@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="79" viewBox="0 0 64 79">
+  <defs>
+    <linearGradient id="linear-gradient" y1="1" x2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fc356f"/>
+      <stop offset="1" stop-color="#ff5f50"/>
+    </linearGradient>
+  </defs>
+  <g id="appIcon" transform="translate(-24.5 -382)">
+    <text id="_Name" data-name="↳ Name" transform="translate(56.5 458)" fill="#fff" font-size="13" font-family="SFProText-Regular, SF Pro Text" letter-spacing="-0.006em"><tspan x="-31.769" y="0">Pizza Task</tspan></text>
+    <g id="logo192" transform="translate(419 275)">
+      <rect id="Rectangle_90" data-name="Rectangle 90" width="61" height="61" rx="15" transform="translate(-393 107)" fill="url(#linear-gradient)"/>
+      <g id="Groupe_60" data-name="Groupe 60" transform="translate(-379.423 135.942)">
+        <g id="Groupe_1" data-name="Groupe 1" transform="translate(0)">
+          <path id="Tracé_1" data-name="Tracé 1" d="M372.479,383.223a17.328,17.328,0,0,1-16.613-12.559,2.539,2.539,0,0,1,4.886-1.382,12.189,12.189,0,0,0,23.453,0,2.539,2.539,0,0,1,4.886,1.382A17.328,17.328,0,0,1,372.479,383.223Z" transform="translate(-355.77 -367.434)" fill="#fff" stroke="#fff" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url(./fonts/DINNextLTArabic-Regular.woff2) format("woff2"),
+    url(./fonts/DINNextLTArabic-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url(./fonts/DINNextLTArabic-Medium.woff2) format("woff2"),
+    url(./fonts/DINNextLTArabic-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+input {
+  -webkit-appearance: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px white inset !important;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style-type: none;
+  border: 0;
+  font-family: inherit;
+  font-family: DIN Next LT Arabic, Arial, Helvetica, sans-serif;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

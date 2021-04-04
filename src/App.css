@@ -1,0 +1,38 @@
+.App {
+  max-width: 414px;
+  height: 100vh;
+  margin: 0 auto;
+}
+.hide {
+  bottom: -60px !important;
+}
+div.screen {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #45434d42;
+}
+img.screen-overlay {
+  width: 100%;
+  max-width: 500px;
+  position: fixed;
+  bottom: -20px;
+  z-index: 99;
+}
+
+div.hide-pwa-helper {
+  display: none;
+}
+
+@media all and (display-mode: standalone) {
+  div.screen {
+    display: none;
+  }
+}

@@ -1,0 +1,10 @@
+export const BRANCH = process.env.REACT_APP_BRANCH_API;
+export const MENU = process.env.REACT_APP_MENU_API;
+export const MEAL = process.env.REACT_APP_MEAL_API;
+export const PHONE = process.env.REACT_APP_PHONE_API;
+export const COUPON = process.env.REACT_APP_COUPON_API;
+export const COOKIE = process.env.REACT_APP_COOKIE_API;
+export const CREATE_ORDER = process.env.REACT_APP_CREATE_ORDER_API;
+export const RESTAURANT = process.env.REACT_APP_RESTAURANT_API;
+export const ORDERS = process.env.REACT_APP_ORDERS_API;
+export const ORDERS_REVIEW = process.env.REACT_APP_ORDERS_REVIEW_API;

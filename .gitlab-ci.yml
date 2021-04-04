@@ -1,0 +1,43 @@
+# This file is a template, and might need editing before it works on your project.
+image: node:latest
+
+cache:
+    paths:
+    - node_modules/
+    
+pages:
+  stage: deploy
+  script:
+  - npm install
+  - npm run build
+  - rm -rf public
+  - mv build public
+  artifacts:
+    paths:
+    - public # mandatory, other folder won't work
+  only:
+  - master # or dev, the branch you want to publish
+    
+# This file is a template, and might need editing before it works on your project.
+# Full project: https://gitlab.com/pages/plain-html
+#This declares the pipeline stages  
+# stages:
+#   - build
+#   - test
+#   - deploy
+# cache:
+#   paths:
+#   - node_modules/
+# build:
+#   stage: build
+#   script:
+#     - npm install
+#     - npm run-script build
+# test:
+#   stage: test
+#   script:
+#     - echo "Running react test suite......"
+# deploy:
+#   stage: deploy
+#   script:
+#     - npm run-script deploy

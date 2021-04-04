@@ -1,0 +1,43 @@
+<svg id="creditCard" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.207" height="15.268" viewBox="0 0 24.207 15.268">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.358" y1="-0.082" x2="0.711" y2="1.362" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#18cefb"/>
+      <stop offset="0.297" stop-color="#2bb9f9"/>
+      <stop offset="0.734" stop-color="#42a0f7"/>
+      <stop offset="1" stop-color="#4a97f6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="0.355" x2="0.5" y2="1.063" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4a97f6" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0469bb"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.418" y1="-0.334" x2="0.578" y2="1.291" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8a7889"/>
+      <stop offset="1" stop-color="#6e566e"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.372" y1="0.269" x2="0.621" y2="0.719" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffa936"/>
+      <stop offset="0.411" stop-color="#ff8548"/>
+      <stop offset="0.778" stop-color="#ff6c54"/>
+      <stop offset="1" stop-color="#ff6359"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="0.372" y1="0.269" x2="0.621" y2="0.719" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffd945"/>
+      <stop offset="0.304" stop-color="#ffcd3e"/>
+      <stop offset="0.856" stop-color="#ffad2b"/>
+      <stop offset="1" stop-color="#ffa325"/>
+    </linearGradient>
+  </defs>
+  <path id="Tracé_153" data-name="Tracé 153" d="M22.376,212.243H1.831A1.831,1.831,0,0,1,0,210.412V198.807a1.831,1.831,0,0,1,1.831-1.831H22.376a1.831,1.831,0,0,1,1.831,1.831v11.606A1.831,1.831,0,0,1,22.376,212.243Z" transform="translate(0 -196.976)" fill="url(#linear-gradient)"/>
+  <path id="Tracé_154" data-name="Tracé 154" d="M0,399.161v1.691a1.831,1.831,0,0,0,1.831,1.831H22.376a1.831,1.831,0,0,0,1.831-1.831v-1.691Z" transform="translate(0 -387.415)" fill="url(#linear-gradient-2)"/>
+  <path id="Tracé_155" data-name="Tracé 155" d="M0,240.817H24.207v4.288H0Z" transform="translate(0 -238.27)" fill="url(#linear-gradient-3)"/>
+  <g id="Groupe_157" data-name="Groupe 157" transform="translate(1.797 9.96)">
+    <g id="Groupe_155" data-name="Groupe 155">
+      <circle id="Ellipse_29" data-name="Ellipse 29" cx="1.786" cy="1.786" r="1.786" fill="url(#linear-gradient-4)"/>
+      <circle id="Ellipse_30" data-name="Ellipse 30" cx="1.786" cy="1.786" r="1.786" transform="translate(2.681)" fill="url(#linear-gradient-5)"/>
+    </g>
+    <g id="Groupe_156" data-name="Groupe 156" transform="translate(12.283 0.098)">
+      <path id="Tracé_156" data-name="Tracé 156" d="M250.356,371.363H242.7a.335.335,0,0,1-.335-.335v-.58a.335.335,0,0,1,.335-.335h7.66a.335.335,0,0,1,.335.335v.58A.335.335,0,0,1,250.356,371.363Z" transform="translate(-242.361 -370.114)" fill="#0469bb"/>
+      <path id="Tracé_157" data-name="Tracé 157" d="M246.767,407.95H242.7a.335.335,0,0,1-.335-.335v-.58a.335.335,0,0,1,.335-.335h4.071a.335.335,0,0,1,.335.335v.58A.335.335,0,0,1,246.767,407.95Z" transform="translate(-242.361 -404.576)" fill="#0469bb"/>
+    </g>
+  </g>
+</svg>

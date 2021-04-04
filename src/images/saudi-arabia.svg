@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="saudi-arabia" transform="translate(0.232 -0.015)">
+    <circle id="Ellipse_31" data-name="Ellipse 31" cx="25" cy="25" r="25" transform="translate(-0.232 0.015)" fill="#71c88d"/>
+    <g id="Groupe_159" data-name="Groupe 159" transform="translate(10.638 13.752)">
+      <path id="Tracé_158" data-name="Tracé 158" d="M144.7,306.087a3.277,3.277,0,0,0,3.277,3.277h9.83a2.731,2.731,0,0,0,2.73,2.731h3.277a2.731,2.731,0,0,0,2.73-2.731v-3.277Z" transform="translate(-141.146 -290.25)" fill="#fff"/>
+      <path id="Tracé_159" data-name="Tracé 159" d="M350.01,144.7v7.645a2.187,2.187,0,0,1-2.184,2.184V157.8a5.467,5.467,0,0,0,5.461-5.461V144.7Z" transform="translate(-324.344 -144.696)" fill="#fff"/>
+      <path id="Tracé_160" data-name="Tracé 160" d="M110.706,152.341a2.187,2.187,0,0,1-2.184,2.184V157.8a5.467,5.467,0,0,0,5.461-5.461V144.7h-3.277Z" transform="translate(-108.522 -144.696)" fill="#fff"/>
+      <rect id="Rectangle_110" data-name="Rectangle 110" width="3.277" height="7.645" transform="translate(20.752 0)" fill="#fff"/>
+      <path id="Tracé_161" data-name="Tracé 161" d="M189.608,149.064a.546.546,0,1,1-1.092,0v-4.369h-3.277v4.369a.546.546,0,1,1-1.092,0v-4.369H180.87v4.369a3.82,3.82,0,0,0,6.007,3.134,3.79,3.79,0,0,0,2.667.657,2.186,2.186,0,0,1-2.121,1.67V157.8a5.467,5.467,0,0,0,5.461-5.461v-7.645h-3.277v4.369Z" transform="translate(-173.771 -144.695)" fill="#fff"/>
+      <rect id="Rectangle_111" data-name="Rectangle 111" width="4.915" height="3.277" transform="translate(7.099 9.83)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

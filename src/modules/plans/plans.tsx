@@ -1,23 +1,23 @@
 //libraries imports
 import React, { FC } from "react";
-import { useHistory } from "react-router-dom";
-import { CountdownCircleTimer } from "react-countdown-circle-timer";
 
 //local imports
 import { continueOrder } from "../../api";
-import { Wrapper, Progress } from "./styles";
+import { Wrapper } from "./styles";
 import { Helper, PaymentOption, Button } from "../../commons";
 import { Header } from "../../components";
+import { logo } from "../../images";
 import {
   Cash,
   CreditCard,
   Check,
-  BackArrow,
+  CheckPlan,
   Basic,
   Standard,
   Premium,
+  Upload,
+  Menu,
 } from "../../images/icons";
-import { PaymentMethod, Timer, OrderComplete } from "../../images";
 // import { ReactComponent as CheckoutBag } from "../../images/checkout-bag.svg";
 
 //types
@@ -26,8 +26,6 @@ type stateType = { restaurant: string; branchname: string };
 type PlanProps = "Standard" | "Basic" | "Premium";
 
 const Plans: FC = () => {
-  let history = useHistory();
-
   //states
   const [step, setStep] = React.useState<number>(1);
   const [phone, setPhone] = React.useState<string>("");
@@ -55,45 +53,14 @@ const Plans: FC = () => {
     }
   };
 
-  const handleNavigationHome = () => {
-    history.push("/");
-  };
-
-  let orders: any[] = [];
-
   return (
     <Wrapper>
       {step <= 3 && (
         <Header>
           <div className="cart-header">
-            <button
-              className={step >= 1 ? "curnent-step" : ""}
-              onClick={(e) => {
-                e.preventDefault();
-                setStep(1);
-              }}
-            >
-              الباقات
-            </button>
-            <button
-              className={step >= 2 ? "curnent-step" : ""}
-              onClick={(e) => {
-                e.preventDefault();
-                step === 1 && orders.length !== 0 && setStep(2);
-              }}
-            >
-              البيانات
-            </button>
-            <button
-              className={step >= 3 ? "curnent-step" : ""}
-              onClick={(e) => {
-                e.preventDefault();
-                step === 2 && orders.length !== 0 && setStep(3);
-              }}
-            >
-              الدفع
-            </button>
-            <Progress step={step} />
+            <Menu width="24" height="24" />
+            <h3>Otlob.io</h3>
+            <img src={logo} alt="logo" />
           </div>
         </Header>
       )}
@@ -108,15 +75,18 @@ const Plans: FC = () => {
             <div className="plan-card-header">
               <Basic width="40" />
               <h4>الباقة الأساسية</h4>
-              <h1>19$</h1>
+              <h1>
+                <span>19</span>
+                <span>رس/شهر</span>
+              </h1>
             </div>
             <hr />
             <p className="plan-option">
-              <Check />
+              <CheckPlan />
               <span>احدى امتيازات الباقة</span>
             </p>
             <p className="plan-option unavailable">
-              <Check />
+              <CheckPlan />
               <span>احدى امتيازات الباقة</span>
             </p>
             <hr />
@@ -135,15 +105,18 @@ const Plans: FC = () => {
             <div className="plan-card-header">
               <Standard width="40" />
               <h4>الباقة الفضية</h4>
-              <h1>19$</h1>
+              <h1>
+                <span>19</span>
+                <span>رس/شهر</span>
+              </h1>
             </div>
             <hr />
             <p className="plan-option">
-              <Check />
+              <CheckPlan />
               <span>احدى امتيازات الباقة</span>
             </p>
             <p className="plan-option unavailable">
-              <Check />
+              <CheckPlan />
               <span>احدى امتيازات الباقة</span>
             </p>
             <hr />
@@ -162,15 +135,18 @@ const Plans: FC = () => {
             <div className="plan-card-header">
               <Premium width="40" />
               <h4>الباقة الذهبية</h4>
-              <h1>19$</h1>
+              <h1>
+                <span>19</span>
+                <span>رس/شهر</span>
+              </h1>
             </div>
             <hr />
             <p className="plan-option">
-              <Check />
+              <CheckPlan />
               <span>احدى امتيازات الباقة</span>
             </p>
             <p className="plan-option unavailable">
-              <Check />
+              <CheckPlan />
               <span>احدى امتيازات الباقة</span>
             </p>
             <hr />
@@ -182,11 +158,17 @@ const Plans: FC = () => {
       )}
       {step === 2 && (
         <div>
-          <img
-            className="store-logo"
-            src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png"
-            alt="logo"
-          />
+          <div className="logo-upload">
+            <img
+              className="store-logo"
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png"
+              alt="logo"
+            />
+            <div className="badge">
+              <Upload />
+              <input type="file" className="logo" />
+            </div>
+          </div>
           <div className="information-form">
             <div className="phone-input store-name">
               <label>إسم المتجر</label>
@@ -309,7 +291,10 @@ const Plans: FC = () => {
                 <div className="plan-card-header">
                   <Premium width="40" />
                   <h4>الباقة الذهبية</h4>
-                  <h1>19$</h1>
+                  <h1>
+                    <span>19</span>
+                    <span>رس/شهر</span>
+                  </h1>
                 </div>
               </div>
               <span>

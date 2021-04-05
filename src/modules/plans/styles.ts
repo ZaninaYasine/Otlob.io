@@ -100,18 +100,29 @@ export const Progress = styled.div<ProgressType>`
 `;
 
 export const Wrapper = styled.div`
-  padding: 85px 15px 85px;
+  padding: 65px 15px 85px;
   div.cart-header {
     position: relative;
     z-index: 9;
-    width: 80%;
+    width: 90%;
     margin: auto;
-    background: white;
+    background: transparent;
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    border: 3px solid white;
-    box-shadow: 0px 5px 15px 0px rgba(190, 191, 197, 0.2);
-    border-radius: 30px;
+    grid-template-columns: 50px 1fr 50px;
+    img {
+      width: 50px;
+      border-radius: 17px;
+    }
+    h3 {
+      text-align: left;
+      margin: auto 20px;
+      padding-bottom: 3px;
+      color: ${(props) => props.theme.palette.textPrimary};
+    }
+    svg {
+      margin: auto;
+      fill: ${(props) => props.theme.palette.textPrimary};
+    }
     button {
       height: 45px;
       border-radius: 25px;
@@ -230,15 +241,16 @@ export const Wrapper = styled.div`
       border-top: 1px solid #f4f4f8;
     }
     .select-plan {
-      height: 45px;
-      padding: 0px 35px 6px;
+      padding: 12px 40px 18px;
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 20px auto 0px auto;
       color: #ffffff;
+      font-size: 18px;
       background-color: ${(props) => props.theme.palette.primary};
       border-radius: 30px;
+      box-shadow: 0px 10px 20px 0px rgba(255, 95, 80, 0.25);
     }
     .plan-option {
       display: flex;
@@ -246,10 +258,14 @@ export const Wrapper = styled.div`
       margin: 15px 0 20px 0;
       color: ${(props) => props.theme.palette.textSecondary};
       span {
-        margin: 0 10px;
+        margin: 0;
       }
       svg {
+        width: 20px;
         margin: 0 10px -5px 10px;
+        circle {
+          fill: #2dce00;
+        }
       }
     }
     .unavailable svg {
@@ -257,12 +273,25 @@ export const Wrapper = styled.div`
     }
     .plan-card-header {
       display: grid;
-      grid-template-columns: 40px 1fr 70px;
+      grid-template-columns: 40px 1fr 100px;
       gap: 20px;
       h1 {
         margin: auto auto auto 0;
-        color: ${(props) => props.theme.palette.primary};
         font-size: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span {
+          color: ${(props) => props.theme.palette.textPrimary};
+        }
+        span:first-child {
+          line-height: 20px;
+          font-size: 24px;
+        }
+        span:last-child {
+          font-size: 11px;
+        }
       }
       h4 {
         margin: auto 0;
@@ -288,6 +317,36 @@ export const Wrapper = styled.div`
       margin-top: 0;
       .icon {
         margin-bottom: 0;
+      }
+    }
+  }
+  .logo-upload {
+    position: relative;
+  }
+  .badge {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #ff5f50;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    left: calc(50% + 20px);
+    box-shadow: 0px 5px 15px 0px rgb(190 191 197 / 20%);
+    input.logo {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      opacity: 0;
+    }
+    svg {
+      width: 18px;
+      * {
+        stroke: #ffffff;
       }
     }
   }

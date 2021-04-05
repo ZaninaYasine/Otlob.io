@@ -72,7 +72,7 @@ export const Card = styled.div`
 
 export const Wrapper = styled.div<WrapperType>`
   width: 100vw;
-  height: ${(props) => (props.info ? "100vh" : "100px")};
+  height: ${(props) => (props.info ? "100vh" : "80px")};
   position: fixed;
   top: 0px;
   left: 0;
@@ -80,6 +80,7 @@ export const Wrapper = styled.div<WrapperType>`
   z-index: 999;
   overflow: ${(props) => (props.info ? "visible" : "hidden")};
   transition: all 0.3s cubic-bezier(0.46, 0.13, 0.35, 1);
+  border-bottom: 1px solid #0000000f;
   div.card {
     height: fit-content;
     position: relative;

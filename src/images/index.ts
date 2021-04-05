@@ -15,7 +15,7 @@ import { ReactComponent as Compass } from "./compass.svg";
 import { ReactComponent as Error } from "./error.svg";
 import { ReactComponent as SaudiArabia } from "./saudi-arabia.svg";
 import { ReactComponent as EmptyCart } from "./supermarket.svg";
-
+import logo from "./logo.png";
 export {
   user_picture,
   pizza,
@@ -34,4 +34,5 @@ export {
   Compass,
   Error,
   EmptyCart,
+  logo,
 };

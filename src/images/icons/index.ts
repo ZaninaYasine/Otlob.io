@@ -30,6 +30,9 @@ import { ReactComponent as Wallet } from "./wallet.svg";
 import { ReactComponent as Basic } from "./basic.svg";
 import { ReactComponent as Standard } from "./standard.svg";
 import { ReactComponent as Premium } from "./premium.svg";
+import { ReactComponent as CheckPlan } from "./checkPlan.svg";
+import { ReactComponent as Upload } from "./upload.svg";
+import { ReactComponent as Menu } from "./menu.svg";
 
 export {
   Basic,
@@ -64,4 +67,7 @@ export {
   Loader,
   Error,
   Cookie,
+  CheckPlan,
+  Menu,
+  Upload,
 };

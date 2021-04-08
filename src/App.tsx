@@ -10,7 +10,7 @@ import { writeData } from "./utils/writeData";
 import client from "./api/apolloClient";
 
 import { registerUserCookie } from "./api";
-import { device, getCookie } from "./utils/utils";
+import { getCookie } from "./utils/utils";
 // import { homeApp } from "./images";
 import { Cookie as CookieIcon } from "./images/icons";
 import "./App.css";
@@ -78,7 +78,7 @@ const App: React.FC = () => {
       <ThemeProvider theme={theme}>
         <div
           className={(theme.rtl ? "rtl" : "ltr") + " App"}
-          style={{ paddingTop: `${device()}px` }}
+          style={{ paddingTop: "30px" }}
         >
           {/* <div
             className={(!show ? "hide-pwa-helper" : "") + " screen"}

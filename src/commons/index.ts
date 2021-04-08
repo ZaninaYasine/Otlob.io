@@ -7,6 +7,7 @@ import Checkbox from "./CheckBox";
 import Radio from "./Radio";
 import PaymentOption from "./PaymentOption";
 import Loader from "./Loader";
+import Select from "./Select";
 
 export {
   BackBtn,
@@ -18,4 +19,5 @@ export {
   Radio,
   PaymentOption,
   Loader,
+  Select,
 };

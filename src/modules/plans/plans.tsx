@@ -4,7 +4,7 @@ import React, { FC } from "react";
 //local imports
 import { continueOrder } from "../../api";
 import { Wrapper } from "./styles";
-import { Helper, PaymentOption, Button } from "../../commons";
+import { Helper, PaymentOption, Button, Select } from "../../commons";
 import { Header } from "../../components";
 import { logo } from "../../images";
 import {
@@ -202,12 +202,16 @@ const Plans: FC = () => {
               <label>البلد</label>
               <div className="input-container">
                 <div>
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="البلد"
-                    onChange={(e) => setPhone(e.target.value)}
-                    value={phone}
+                  <Select
+                    fullWidth
+                    name="البلد"
+                    options={[
+                      { label: "السعودية", value: "السعودية" },
+                      { label: "تونس", value: "تونس" },
+                      { label: "الامارات", value: "الامارات" },
+                      { label: "البحرين", value: "البحرين" },
+                      { label: "الاردن", value: "الاردن" },
+                    ]}
                   />
                 </div>
               </div>

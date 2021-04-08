@@ -10,7 +10,7 @@ import { Add, Minus } from "../../images/icons";
 import { getCookie } from "../../utils/utils";
 
 const Product: FC = () => {
-  let { restaurant, branchname, id } = useParams();
+  let { restaurant, branchname, id } = useParams<any>();
   let location: any = useLocation();
   let available = location.state.available;
   //states
@@ -18,19 +18,19 @@ const Product: FC = () => {
   const [product, setProduct] = React.useState<any>();
   const [requiredAdditions, setRequiredAdditions] = React.useState<any[]>([]);
   const [optionalAdditions, setOptionalAdditions] = React.useState<any[]>([]);
-  const [isAvailable, setIsAvalable] = React.useState<any>();
-
+  const [setIsAvalable] = React.useState<any>();
 
   //data with axios
   useEffect(() => {
-    getRestaurant(restaurant).then(result => {
+    getRestaurant(restaurant).then((result) => {
       const { available } = result.data.data;
       setIsAvalable(available);
-    })
+    });
 
     getMealInfo(restaurant, branchname, id).then((result) => {
       setProduct(result);
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [restaurant, branchname, id]);
 
   //function
@@ -46,7 +46,6 @@ const Product: FC = () => {
   };
 
   const addToCart = () => {
-
     let response = addProduct(restaurant, branchname, {
       cookie_id: getCookie("token"),
       food_id: id,
@@ -63,7 +62,6 @@ const Product: FC = () => {
   };
 
   const handleAddQuantity = () => {
-
     setQuantity(quantity + 1);
   };
 

@@ -184,7 +184,7 @@ export const Wrapper = styled.div`
       margin-bottom: 8px;
       display: block;
     }
-    input {
+    > div input {
       height: 35px;
       margin: 0 10px;
       background-color: transparent;
@@ -432,8 +432,6 @@ export const Wrapper = styled.div`
     }
   }
   .input-container {
-    display: grid;
-    grid-template-columns: 1fr 45px;
   }
   .submit-number-btn {
     width: 40px;

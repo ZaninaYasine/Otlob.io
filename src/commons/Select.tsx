@@ -221,7 +221,7 @@ const SelectContainer = styled.div<SelectContainerProps>`
     position: relative;
     display: grid;
     ${(props) => props.adormentLeft && "grid-template-columns:auto 1fr;"}
-    ${(props) => props.adormentRight && "grid-template-columns:1fr auto;"}
+    ${(props) => props.adormentRight && "grid-template-columns:1fr;"}
     ${(props) =>
       props.adormentRight &&
       props.adormentLeft &&
@@ -278,6 +278,9 @@ const SelectContainer = styled.div<SelectContainerProps>`
     display: flex;
     justify-content: flex-end;
     padding: 3px 0px 0px 0px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
     svg.--empty {
       margin-right: 7px;
     }
